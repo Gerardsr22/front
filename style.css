@@ -1,10 +1,302 @@
 header{
-
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo{
 
 }
 
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopping{
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopping .shopping-cart{
+
+}
+
+.shopping .shopping-buynow{
+
+}
 
 
+.slider{
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slider .slider-image{
+    background-image: url(images/slider-watch.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.slider .slider-title{
+
+}
+
+.slider .slider-description{
+
+}
+
+.slider .slider-button{
+
+}
+
+.featured{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.featured .featured-title{
+
+}
+
+.featured .featured-description{
+
+}
+
+.featured .featured-elements{
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured .featured-element .feature-element-image{
+
+}
+
+.featured .featured-element .feature-element-title{
+    
+}
+
+.featured .featured-element .feature-element-description{
+    
+}
+
+.details{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.details .details-title{
+
+}
+
+.details .details-description{
+
+}
+
+.details .details-products{
+    display: flex;
+    justify-content: space-between;
+}
+
+.details .details-elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.details .details-elements .details-elements-image{
+
+}
+
+.details .details-elements .details-elements-title{
+
+}
+
+.details .details-elements .details-elements-subtitle{
+
+}
+
+.details .details-elements .details-elements-info{
+
+}
+
+.details .details-elements .details-elements-buttons{
+
+}
+
+.information{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.information .information-caracteristics{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.information .information-caracteristics-atributes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.information .information-caracteristics-atributes-symbol {
+
+}
+
+.information .information-caracteristics-atributes-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.information .information-caracteristics-atributes-text-title {
+
+}
+
+.information .information-caracteristics-atributes-text-explanation {
+
+}
+
+.information .information-photo{
+
+
+}
+
+.team{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team .team-title{
+
+}
+
+.team .team-descripion{
+
+}
+
+.team .team-members{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team .team-members .team-members-profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team .team-members .team-members-profile .team-members-profile-photo{
+
+}
+
+.team .team-members .team-members-profile .team-members-profile-name{
+
+}
+
+.team .team-members .team-members-profile .team-members-profile-job{
+
+}
+
+.team .team-members .team-members-profile .team-members-profile-menu{
+
+}
+
+.locatin{
+
+}
+
+.location .location-image{
+    background-image: url(https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6304.829986131271!2d-122.4746968033092!3d37.80374752160443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808586e6302615a1%3A0x86bd130251757c00!2sStorey+Ave%2C+San+Francisco%2C+CA+94129!5e0!3m2!1sen!2sus!4v1435826432051); 
+    background-size: cover;
+    background-position: center;
+}
+
+.location .location-box{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.location .locatin-box-title{
+
+}
+
+.location .location-box .location-box-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.location .location-box .location-box-info .location-box-info-symbol{
+
+}
+
+.location .location-box .location-box-info .location-box-info-domain{
+
+}
+
+.location .location-box .location-box-phone{
+    display: flex;
+    justify-content: space-between;
+}
+
+.location .location-box .location-box-phone .location-box-phone-symbol{
+
+}
+
+.location .location-box .location-box-phone .location-box-phone-number{
+
+}
+
+.location .location-box .location-box-gmail{
+    display: flex;
+    justify-content: space-between;
+}
+
+.location .location-box .location-box-gmail .location-box-gmail-symbol{
+
+}
+
+.location .location-box .location-box-gmail .location-box-gmail-name{
+
+}
+
+.location .location-box .location-box-button{
+
+}
+
+.endpage {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.endpage .enpage-socialmedia ul{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.endpage .endmenu {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.endpage .bottomtext {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
