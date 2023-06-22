@@ -4,55 +4,75 @@ header{
     display: flex;
     height: 5vh;
     justify-content: space-between;
+    gap: 5%;
     padding: 2rem 10%;
     width: 80%;
 }
 
 
 .logo{
-
+    size: 10rem;
 }
 
 .menu ul{
     display: flex;
-    justify-content: space-between;
+    gap: 1rem;
+}
+
+.menu ul li{
+    font-family: 'Roboto', sans-serif;
+    font-size: 300;
+    font-weight:400;
 }
 
 .shopping{
     display: flex;
     justify-content: space-between;
+    gap: 10%;
 }
 
 .shopping .shopping-cart{
 
 }
 
-.shopping .shopping-cart button{
-    width: 5%;
-    height: 5vh;
+.shopping .shopping-cart button,
+.shopping .shopping-buynow button{
+    background-color: rgb(255, 102, 34);
+    color:hsl(204, 56%, 98%);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem ;
+    font-weight: 400;
 }
+
+.shopping .shopping-cart button svg{
+    fill:hsl(204, 56%, 98%);
+    width: 2rem;
+}
+
 
 .shopping .shopping-buynow{
 
 }
 
-.shopping .shopping-buynow button{
-    height: 5vh;
-}
-
-
 .slider{
     align-items:center;
     display: flex;
     flex-direction: column;
+    height: 90vh;
+    max-height: 90vh;
     justify-content: space-between;
+    position: relative;
+    width: 100%;
 }
 
 .slider .slider-image{
-    height: 80vh;
-    max-height: 80vh;
+    height: 100%;
     overflow: hidden;
-
+    position: absolute;
+    z-index: 1000;
 }
 
 .slider .slider-image img{
@@ -64,45 +84,59 @@ header{
 
 .slider .slider-title{
     margin-bottom: 2rem;
+    position: absolute;
+    z-index: 1001;
+    top: 10%;
 }
 
 .slider .slider-title h1{
+    color:rgb(247, 250, 253);
     font-family: 'Roboto', sans-serif;
     font-size: 4rem;
     font-weight: 700;
     position: relative;
-    z-index: 15;
+    
 }
 
 .slider .slider-description{
+    color:rgb(247, 250, 253);
     margin-bottom: 2rem;
+    position: absolute;
+    z-index: 1001;
+    top: 30%;
 }
 
 .slider .slider-description p{
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 500;
     text-align: center;
-
-
 }
 
 .slider .slider-button{
-
+    position: absolute;
+    z-index: 1001;
+    top: 46%;
 }
 
 .slider .slider-button button{
-    size: 90%;
-    background-color: rgb(250, 164, 73);
+    padding: 1rem 2rem;
+    background-color: rgb(255, 102, 34);
     font-family: 'Roboto', sans-serif;
-    font-size: 5 rem;
+    color:rgb(247, 250, 253);
+    font-weight: 600;
+    font-size: 2rem;
+    border-radius: 1rem;
 }
 
 .featured{
-    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: rgb(189, 195, 199);
+    height: 100%;
+    padding-top: 5%;
+    padding-bottom: 1%;
 }
 
 .featured .featured-title{
@@ -110,9 +144,11 @@ header{
 }
 
 .featured .featured-title h2{
+    text-align: center;
     font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
     font-size: 5rem;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .featured .featured-description{
@@ -120,18 +156,39 @@ header{
 }
 
 .featured .featured-description p{
+    margin-top: 2%;
     font-family: 'Roboto', sans-serif;
-    font-size: 5 rem;
+    font-size: 2rem;
     text-align: center;
+    font-weight: 400;
 }
 
 .featured .featured-elements{
     display: flex;
     justify-content: space-between;
+    margin: 4% 10%;
+    gap: 5rem;
+}
+
+.featured .featured-element{
+
+}
+
+.featured .featured-element{
+    background-color: rgb(221, 221, 221);
+    border-radius: 2rem;
+    width: 100%;
+    padding: 3%;
 }
 
 .featured .featured-element .featured-element-image{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
+.featured .featured-element .featured-element-image svg{
+    width: 35%;
 }
 
 .featured .featured-element .featured-element-title{
@@ -140,9 +197,20 @@ header{
 
 .featured .featured-element .featured-element-title h3{
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    
 }
 
 .featured .featured-element .featured-element-description{
+    
+}
+
+.featured .featured-element .featured-element-description p{
+
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 3%;
     
 }
 
@@ -151,50 +219,107 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
+    padding: 5%;
+    gap: 2rem;
+    background-color: rgb(221, 221, 221);
+    
+
 }
 
 .details .details-title{
 
 }
 
+.details .details-title h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    
+}
+
 .details .details-description{
 
+}
+
+.details .details-description p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    
 }
 
 .details .details-products{
     display: flex;
     justify-content: space-between;
+    padding: 2%;
+    gap: 2rem;
 }
 
 .details .details-elements{
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: rgb(189, 195, 199);
+    border-radius: 2rem;
+    gap: 1rem;
 }
 
 .details .details-elements .details-elements-image{
 
 }
 
+.details .details-elements .details-elements-image img{
+    margin: 1rem;
+    border-radius: 2rem;
+}
+
 .details .details-elements .details-elements-title{
 
+}
+
+.details .details-elements .details-elements-title h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 .details .details-elements .details-elements-subtitle{
 
 }
 
+.details .details-elements .details-elements-subtitl h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
 .details .details-elements .details-elements-info{
 
+}
+
+.details .details-elements .details-elements-info span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 .details .details-elements .details-elements-buttons{
 
 }
 
+.details .details-elements .details-elements-buttons button{
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+
+
 .information{
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
