@@ -282,17 +282,17 @@ header{
 
 .details .details-elements .details-elements-title h3{
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 .details .details-elements .details-elements-subtitle{
 
 }
 
-.details .details-elements .details-elements-subtitl h4{
+.details .details-elements .details-elements-subtitle h4{
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -303,7 +303,8 @@ header{
 .details .details-elements .details-elements-info span{
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 700;
+    
 }
 
 .details .details-elements .details-elements-buttons{
@@ -312,7 +313,14 @@ header{
 
 .details .details-elements .details-elements-buttons button{
     margin-bottom: 1rem;
+    padding: 2% 20%;
     border-radius: 10px;
+    border-style: hidden;
+    background-color:rgb(255, 102, 34);
+    color:rgb(221, 221, 221);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 
@@ -321,20 +329,30 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100%;
+    margin: 5% 7%;
 }
 
 .information .information-caracteristics{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1rem;
+    
+    
 }
 
 .information .information-caracteristics-atributes{
     display: flex;
     justify-content: space-between;
+    
 }
 
 .information .information-caracteristics-atributes-symbol {
+
+}
+
+.information .information-caracteristics-atributes-symbol svg{
 
 }
 
