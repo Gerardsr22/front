@@ -316,8 +316,8 @@ header{
     padding: 2% 20%;
     border-radius: 10px;
     border-style: hidden;
-    background-color:rgb(255, 102, 34);
-    color:rgb(221, 221, 221);
+    background-color:rgb(245, 120, 67);
+    color:rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     font-weight: 700;
@@ -329,15 +329,22 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
-    margin: 5% 7%;
+    position: relative;
+    height: 70vh;
+    padding: 5% 7%;
+    background-color:rgb(189, 195, 199) ;
+    gap: 4rem;
 }
 
 .information .information-caracteristics{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 1rem;
+    justify-content: center;
+    height: 80%;
+    gap: 4rem;
+    padding: 3% 2%; 
+    background-color:rgb(221, 221, 221) ;
+    border-radius: 2rem;
     
     
 }
@@ -345,6 +352,9 @@ header{
 .information .information-caracteristics-atributes{
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
+    
+
     
 }
 
@@ -353,156 +363,226 @@ header{
 }
 
 .information .information-caracteristics-atributes-symbol svg{
-
+    width: 2rem;
+    fill: rgb(245, 120, 67);
+    
 }
 
 .information .information-caracteristics-atributes-text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 .information .information-caracteristics-atributes-text-title {
 
 }
 
+.information .information-caracteristics-atributes-text-title h3{
+     font-size: 2rem;
+     font-family: 'Roboto', sans-serif;
+     font-weight: 700;
+}
+
 .information .information-caracteristics-atributes-text-explanation {
 
 }
 
+.information .information-caracteristics-atributes-text-explanation p{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
 .information .information-photo{
-
-
+    
 }
 
 .team{
     align-items: center;
     display: flex;
     flex-direction: column;
+    height: 70vh;
     justify-content: space-between;
+    background-color: rgb(221, 221, 221);
+    padding: 5% 5%;
+    gap:2rem;
 }
 
 .team .team-title{
 
 }
 
-.team .team-descripion{
+.team .team-title h2{
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
 
+.team .team-description{
+
+}
+
+.team .team-description p{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin: 0% 15%;
 }
 
 .team .team-members{
     align-items: center;
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
 }
 
 .team .team-members .team-members-profile{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 2rem;
+    text-align: center;
+    background-color:rgb(189, 195, 199);
+    
 }
 
-.team .team-members .team-members-profile .team-members-profile-photo{
+.team .team-members-profile-photo{
+    margin: 1rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.team .team-members-profile-name{
+    
+}
+
+.team .team-members-profile-name h3{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 
 }
 
-.team .team-members .team-members-profile .team-members-profile-name{
+.team .team-members-profile-job{
 
 }
 
-.team .team-members .team-members-profile .team-members-profile-job{
-
+.team .team-members-profile-job h4{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-top: 5px;
 }
 
-.team .team-members .team-members-profile .team-members-profile-menu{
 
+.team .team-members-profile-menu{
+    color:rgb(218, 98, 47);
 }
 
-.locatin{
-
+.location{
+    height: 70vh;
+        align-items: ;
 }
 
 .location .location-image{
-    background-image: url(https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6304.829986131271!2d-122.4746968033092!3d37.80374752160443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808586e6302615a1%3A0x86bd130251757c00!2sStorey+Ave%2C+San+Francisco%2C+CA+94129!5e0!3m2!1sen!2sus!4v1435826432051); 
-    background-size: cover;
-    background-position: center;
+    position: relative;
+    z-index: 1001;
 }
 
-.location .location-box{
+.location .location-image iframe{
+    align-items: center;
+    position: relative;
+    z-index: 1001;
+    width: 100%;
+    height: ;
+
+}
+
+.location .location-image-box{
     align-items: center;
     display: flex;
-
+    flex-direction: column;
     justify-content: space-between;
+    position:absolute;
+    z-index: 1002;
 
 }
 
-.location .locatin-box-title{
+.location .locatin-image-box-title{
 
 }
 
-.location .location-box .location-box-info{
+.location .location-image-box .location-image-box-info{
     display: flex;
     justify-content: space-between;
 }
 
-.location .location-box .location-box-info .location-box-info-symbol{
+.location .location-image-box-info-symbol{
 
 }
 
-.location .location-box .location-box-info .location-box-info-domain{
+.location .location-image-box-info-domain{
 
 }
 
-.location .location-box .location-box-phone{
+.location .location-image-box-phone{
     display: flex;
     justify-content: space-between;
 }
 
-.location .location-box .location-box-phone .location-box-phone-symbol{
+.location .location-image-box-phone-symbol{
 
 }
 
-.location .location-box .location-box-phone .location-box-phone-number{
+.location .location-image-box-phone-number{
 
 }
 
-.location .location-box .location-box-gmail{
+.location .location-image-box-gmail{
     display: flex;
     justify-content: space-between;
 }
 
-.location .location-box .location-box-gmail .location-box-gmail-symbol{
+.location .location-image-box-gmail-symbol{
 
 }
 
-.location .location-box .location-box-gmail .location-box-gmail-name{
+.location .location-image-box-gmail-name{
 
 }
 
-.location .location-box .location-box-button{
+.location .location-image-box-button{
 
 }
 
 .endpage {
     align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column ;
     justify-content: space-between;
 }
 
-.endpage .enpage-socialmedia ul{
-    align-items: center;
+.endpage .endpage-socialmedia{
+
+}
+
+.endpage .endpage-socialmedia ul{
+   
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
-.endpage .endmenu {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+.endpage .endpage-endmenu {
+
 }
 
-.endpage .bottomtext {
+.endpage .endpage-endmenu ul{
+}
+
+.endpage .endpage-bottomtext {
     align-items: center;
     display: flex;
     justify-content: space-between;
