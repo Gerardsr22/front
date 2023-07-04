@@ -57,7 +57,97 @@ header{
 
 }
 
-.slider{
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 3000;
+    background-color: rgba(240, 248, 255, 0.942);
+}
+
+.overlay .overlay-modal {
+    position: fixed;
+    z-index: 3001;
+    width: 50%;
+    height: 60%;
+    transform: translate(50%, 20%);
+    background-color: rgb(245, 245, 245);
+    border-radius: 1rem;
+    border-style: ridge;
+    display: flex;
+    gap: 3rem;
+    padding: 2rem;
+    
+}
+
+
+.overlay .overlay-modal-image{
+    padding-left: 1rem;
+}
+
+.overlay .overlay-modal-info {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.overlay .overlay-modal-info-title {
+
+}
+
+.overlay .overlay-modal-info-title h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 3rem;
+}
+
+.overlay .overlay-modal-info-subtitle {
+
+}
+
+.overlay .overlay-modal-info-subtitle h3 {
+    font-family: 'Roboto', sans-serif;
+    color:rgb(218, 98, 47);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.overlay .overlay-modal-info-price {
+
+}
+
+.overlay .overlay-modal-info-price span{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+.overlay .overlay-modal-info-text {
+
+}
+
+.overlay .overlay-modal-info-text p{
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.overlay .overlay-modal-info-button{
+}
+
+.overlay .overlay-modal-info-button button{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: x-large;
+    width: 90%;
+    padding: 1rem;
+    background-color: rgb(218, 98, 47);
+    border-radius: 10px;
+}
+
+.slider {
     align-items:center;
     display: flex;
     flex-direction: column;
@@ -489,7 +579,7 @@ header{
 .location .location-image{
     position: absolute;
     z-index: 1001;
-    height: 60vh;
+    height: 65vh;
     width: 100%;
 }
 
@@ -508,7 +598,7 @@ header{
     justify-content: space-between;
     position:absolute;
     right: 37%;
-    top:10%;
+    top:20%;
     z-index: 1002;
     width: 20%;
 }
@@ -516,89 +606,51 @@ header{
     width: 2rem;
 }
 .location .location-box-title{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     margin-top: 2rem;
 }
 
 .location .location-box-title h3{
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .location .location-box .location-box-info{
     display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    
+    gap: 2rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+.location .location-box-info-data{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
 }
 
 .location .location-box-info-symbol{
-    
+
 }
 
 .location .location-box-info-symbol svg{
     width: 2rem;
 }
 
-.location .location-box-info-domain{
-
-}
-
-.location .location-box-info-domain span{
-    font-family: 'Roboto', sans-serif;
-}
-
-.location .location-box-phone{
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-}
-
-.location .location-box-phone-symbol{
-
-}
-
-.location .location-box-phone-symbol svg{
-    width: 2rem;
-}
-
-.location .location-box-phone-number{
-    font-family: 'Roboto', sans-serif;
-}
-
-.location .location-box-gmail{
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-}
-
-.location .location-box-gmail-symbol{
-
-}
-
-.location .location-box-gmail-symbol svg {
-    width: 2rem;
-}
-
-.location .location-box-gmail-name{
-
-}
-
-.location .location-box-gmail-name span{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-}
 
 .location .location-box-button{
-
+    width: 50%;
 }
 
 .location .location-box-button button{
+    padding: 2%;
+    width: 100%;
     margin-bottom: 2rem;
     font-family: 'Roboto', sans-serif;
     background-color: rgb(218, 98, 47);
     border-radius: 9px;
+    font-weight: 700;
+
 }
 
 .endpage {
@@ -612,8 +664,8 @@ header{
 
 }
 
-.endpage .endpage-socialmedia ul{
-    width: 1rem;
+.endpage .endpage-socialmedia {
+   
 }
 
 
@@ -621,23 +673,31 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center; 
+    gap: 2rem;
 }
 
 .endpage .endpage-socialmedia ul li svg{
     fill: black;
-    width: 2rem;
+    width: 3rem;
+    right:30%;
 }
 
-.endpage .endpage-endmenu{
+.endpage .endpage-endmenu{ 
 
 }
 
 .endpage .endpage-endmenu ul{
     display: flex;
+    font-family: 'Roboto', sans-serif;
+    gap: 4rem;
+    margin-bottom: 4rem;
 }
 
 .endpage .endpage-bottomtext {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 2rem;
 }
