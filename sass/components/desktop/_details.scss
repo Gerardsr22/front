@@ -1,0 +1,81 @@
+.details{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 5%;
+    gap: 2rem;
+    background-color: $secondary-color;
+    
+}
+
+
+.details .details-title h2{
+    font-family: $font-stack;
+    font-size: 4rem;
+    font-weight: 700;
+    
+}
+
+
+.details .details-description p{
+    text-align: center;
+    font-family: $font-stack;
+    font-size: 2rem;
+    font-weight: 400;
+    
+}
+
+.details .details-products{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    gap: 2rem;
+}
+
+.details .details-elements{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $terciary-color;
+    border-radius: 2rem;
+    gap: 1rem;
+}
+
+.details .details-elements .details-elements-image img{
+    margin: 1rem;
+    border-radius: 2rem;
+}
+
+.details .details-elements .details-elements-title h3{
+    font-family: $font-stack;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.details .details-elements .details-elements-subtitle h4{
+    font-family: $font-stack;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.details .details-elements .details-elements-info span{
+    font-family: $font-stack;
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+
+.details .details-elements .details-elements-buttons button{
+    margin-bottom: 1rem;
+    padding: 2% 20%;
+    border-radius: 10px;
+    border-style: hidden;
+    background-color:$primary-color;
+    color:$cuad-color;
+    font-family: $font-stack;
+    font-size: 1rem;
+    font-weight: 700;
+}

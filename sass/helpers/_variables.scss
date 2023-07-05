@@ -1,0 +1,21 @@
+//z-index
+$z-index-inactive-overlay:998;
+$z-index-checkout: 999;
+$z-index-product: 1000;
+$z-index-overlay: 1001;
+$z-index-modal: 2000;
+
+//typography
+$font-stack: 'Roboto', sans-serif;
+$font-stack-condensed: 'Roboto', sans-serif;
+
+//colors
+$primary-color: rgb(255, 102, 34);
+$hover-color: rgb(247, 250, 253);
+$secondary-color: rgb(221, 221, 221);
+$terciary-color: rgb(196, 196, 196);
+$cuad-color:rgb(255, 255, 255);
+$overlay-color: rgba(240, 248, 255, 0.942);
+
+//style
+$text-border: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;

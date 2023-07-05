@@ -1,0 +1,13 @@
+.socialmedia ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 2rem;
+}
+
+.socialmedia ul li svg{
+    fill: black;
+    width: 3rem;
+    right:30%;
+}

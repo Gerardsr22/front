@@ -1,0 +1,10 @@
+.menu ul{
+    display: flex;
+    gap: 1rem;
+}
+
+.menu ul li{
+    font-family: $font-stack;
+    font-size: 300;
+    font-weight:400;
+}

@@ -1,0 +1,75 @@
+.team{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: space-between;
+    background-color: rgb(221, 221, 221);
+    padding: 5% 5%;
+    gap:2rem;
+}
+
+.team .team-title{
+
+}
+
+.team .team-title h2{
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.team .team-description{
+
+}
+
+.team .team-description p{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin: 0% 15%;
+}
+
+.team .team-members{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.team .team-members .team-members-profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2rem;
+    text-align: center;
+    background-color:rgb(189, 195, 199);
+    
+}
+
+.team .team-members-profile-photo{
+    margin: 1rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.team .team-members-profile-name h3{
+    font-size: 1rem;
+    font-family: $font-stack;
+    font-weight: 700;
+
+}
+
+.team .team-members-profile-job h4{
+    font-size: 1rem;
+    font-family: $font-stack;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+
+.team .team-members-profile-menu{
+    color: $primary-color;
+    font-family: $font-stack;
+}

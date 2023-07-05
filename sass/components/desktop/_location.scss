@@ -1,0 +1,79 @@
+
+.location{
+    height: 70vh;
+    position: relative;
+}
+
+.location .location-image{
+    position: absolute;
+    z-index: $z-index-checkout;
+    height: 65vh;
+    width: 100%;
+}
+
+.location .location-image iframe{
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.location .location-box{
+    align-items:center;
+    display: flex;
+    background-color: $cuad-color;
+    border-radius: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    position:absolute;
+    right: 37%;
+    top:15%;
+    z-index: $z-index-product;
+    width: 20%;
+}
+.locaation .location-box svg{
+    width: 2rem;
+}
+.location .location-box-title{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.location .location-box-title h3{
+    font-size: 2rem;
+    font-family: $font-stack;
+    font-weight: 700;
+}
+
+.location .location-box .location-box-info{
+    display: flex;
+    gap: 2rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+.location .location-box-info-data{
+    text-align: left;
+    font-family: $font-stack;
+}
+
+.location .location-box-info-symbol svg{
+    width: 2rem;
+}
+
+
+.location .location-box-button{
+    width: 60%;
+}
+
+.location .location-box-button button{
+    padding: 5%;
+    width: 100%;
+    margin-bottom: 2rem;
+    color:$cuad-color;
+    font-family: $font-stack;
+    background-color: $primary-color;
+    border-radius: 9px;
+    font-weight: 700;
+    border:none;
+}

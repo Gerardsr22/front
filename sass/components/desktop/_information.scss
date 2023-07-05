@@ -1,0 +1,55 @@
+.information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 70vh;
+    padding: 5% 7%;
+    background-color: $terciary-color;
+    gap: 4rem;
+}
+
+.information .information-caracteristics{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+    gap: 4rem;
+    padding: 3% 2%; 
+    background-color: $secondary-color;
+    border-radius: 2rem;
+}
+
+.information .information-photo{
+    width: 45%;
+}
+
+.information .information-caracteristics-atributes{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.information .information-caracteristics-atributes-symbol svg{
+    width: 2rem;
+    fill: $primary-color;
+    
+}
+
+.information .information-caracteristics-atributes-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.information .information-caracteristics-atributes-text-title h3{
+     font-size: 2rem;
+     font-family: $font-stack;
+     font-weight: 700;
+}
+
+.information .information-caracteristics-atributes-text-explanation p{
+    font-size: 1rem;
+    font-family: $font-stack;
+}
