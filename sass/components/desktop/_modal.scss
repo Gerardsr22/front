@@ -1,0 +1,83 @@
+
+.modal {
+    position: fixed;
+    z-index: $z-index-modal;
+    width: 50%;
+    height: 60%;
+    transform: translate(50%, 20%);
+    background-color: $hover-color;
+    border-radius: 1rem;
+    border-style: ridge;
+    display: flex;
+    gap: 3rem;
+    padding: 2rem;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s;
+}
+
+.modal.active{
+    opacity: 1;
+    z-index: $z-index-modal;
+}
+
+.modal-image{
+    padding-left: 2rem;
+    width: 70%;
+    align-items: center;
+
+}
+
+.modal-info-X {
+    position: absolute;
+    width: 5%;
+    left: 93%;
+}
+
+.modal-info-X button{
+    background-color: $hover-color;
+    border-style: none;
+    cursor: pointer;
+}
+
+.modal-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-info-title h1{
+    font-family: $font-stack;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 3rem;
+}
+
+.modal-info-subtitle h3 {
+    font-family: $font-stack;
+    color: $primary-color;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.modal-info-price span{
+    font-family: $font-stack;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+.modal-info-text p{
+    font-family: $font-stack;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.modal-info-button button{
+    font-family: $font-stack;
+    font-weight: 700;
+    font-size: x-large;
+    width: 70%;
+    padding: 1rem;
+    background-color: $primary-color;
+    border-radius: 10px;
+    margin-left: 3rem;
+}

@@ -1,10 +1,25 @@
-let module = document.getElementbyId("module");
+let modalButtons = document.querySelectorAll(".modal-button");
+let overlay =  document.querySelector(".overlay");
+let closeButton = document.querySelector(".close-button");
+let modal = document.querySelector(".modal")
+let chekButton = document.querySelector(".checkout")
 
-if(module){
-    module.addEventListener("click", () => {
-
-        module.classList.toggle("active"); 
+modalButtons.forEach(modalButton => {
+    modalButton.addEventListener("click", () => {
+        overlay.classList.add("active"); 
+        modal.classList.add("active");
     });
-}
+})
 
-alert('funciona pero tu codigo no');
+overlay.addEventListener("click",() => {
+    overlay.classList.remove("active");
+    modal.classList.remove("active");
+    
+});
+
+closeButton.addEventListener("click", () => {
+    overlay.classList.remove("active"); 
+    modal.classList.remove("active");
+});
+
+
