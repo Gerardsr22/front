@@ -21,11 +21,16 @@ let tabsInfo = document.querySelectorAll(".tabs-info")
 
 tabButton.forEach(tabButton => {
     tabButton.addEventListener("click", () =>{
-        tabButton.classList.toggle("active")
-        console.log(tabButton.dataset.color);
-        if(tabButton.dataset.number == tabsInfo.dataset.number) {
-            tabsInfo.classList.toggle("active");
-        }
+        tabButton.classList.toggle("active");
+        tabButton.querySelector('.tabs-uptab-tab').classList.toggle("active");
+        
+        
+        tabsInfo.forEach(tabsInfo => {
+            console.log(tabButton.dataset.color);
+            if(tabButton.dataset.number == tabsInfo.dataset.number) {
+                tabsInfo.classList.toggle("active");
+            }
+        })
     });
 
 })
