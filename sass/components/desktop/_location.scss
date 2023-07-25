@@ -8,12 +8,11 @@
     position: absolute;
     z-index: $z-index-checkout;
     height: 65vh;
-    width: 100%;
 }
 
-.location .location-image iframe{
-    align-items: center;
-    height: 100%;
+.location .location-image img{
+    overflow: hidden;
+    height: 65vh;
     width: 100%;
 }
 
